@@ -1,17 +1,18 @@
 import { CategoriesComponent } from './../../views/categories/categories.component';
-import { ProductsComponent } from './../../products/products.component';
+import { ProductsComponent } from '../../views/products/products.component';
 import { Routes } from '@angular/router';
 
-import { DashboardComponent } from '../../dashboard/dashboard.component';
-import { UserProfileComponent } from '../../user-profile/user-profile.component';
-import { TableListComponent } from '../../table-list/table-list.component';
-import { TypographyComponent } from '../../typography/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
-import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import { HomeComponent } from '../../home/home.component';
-import { SalesComponent } from '../../sales/sales.component';
+import { DashboardComponent } from '../../views/dashboard/dashboard.component';
+import { UserProfileComponent } from '../../views/user-profile/user-profile.component';
+import { TableListComponent } from '../../views/table-list/table-list.component';
+import { TypographyComponent } from '../../views/typography/typography.component';
+import { IconsComponent } from '../../views/icons/icons.component';
+import { MapsComponent } from '../../views/maps/maps.component';
+import { NotificationsComponent } from '../../views/notifications/notifications.component';
+import { UpgradeComponent } from '../../views/upgrade/upgrade.component';
+import { HomeComponent } from '../../views/home/home.component';
+import { SalesComponent } from '../../views/sales/sales.component';
+
 
 export const AdminLayoutRoutes: Routes = [
     // {
