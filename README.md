@@ -12,3 +12,8 @@ After you have to use the command
 ```
 npm install
 ```
+
+After that run the next command
+```
+ng serve
+```
