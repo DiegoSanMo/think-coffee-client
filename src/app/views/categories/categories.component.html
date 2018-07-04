@@ -1,7 +1,7 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-lg-12 col-md-12">
+            <div class="col-lg-8 col-md-12 col-lg-offset-4">
                 <div class="card">
                     <div class="card-header card-header-tabs card-header-primary">
                         <h2 class="text-center"><strong>Registro de categorias</strong></h2>
@@ -10,7 +10,7 @@
                                 <!-- <span class="nav-tabs-title">Categorias para:</span> -->
                                 <ul class="nav nav-tabs" data-tabs="tabs">
                                     <li class="nav-item">
-                                        <a mat-button class="nav-link active" href="#profile" data-toggle="tab">
+                                        <a mat-button class="nav-link active" href="#ing" data-toggle="tab">
                                             <i class="material-icons">restaurant</i><strong>Ingredientes</strong> 
                                             <div class="ripple-container"></div>
                                         </a>
@@ -27,15 +27,29 @@
                     </div>
                     <div class="card-body">
                         <div class="tab-content">
-                            <div class="tab-pane active" id="profile">
+                            <div class="tab-pane active" id="ing">
                                 <table class="table">
                                     <tbody>
                                         <tr>
-                                            <mat-form-field appearance="standard">
-                                                <mat-label>Standard form field</mat-label>
-                                                <input matInput placeholder="Nombre de la categoria">
-                                                <mat-hint>Hint</mat-hint>
-                                            </mat-form-field>
+                                            <div>
+                                                <mat-form-field appearance="outline">
+                                                    <mat-label>Outline form field</mat-label>
+                                                    <input matInput placeholder="Placeholder">
+                                                    <mat-hint>Hint</mat-hint>
+                                                </mat-form-field>
+    
+                                                <mat-form-field appearance="outline">
+                                                    <mat-label>Outline form field</mat-label>
+                                                    <input matInput placeholder="Placeholder">
+                                                    <mat-hint>Hint</mat-hint>
+                                                </mat-form-field>
+    
+                                                <mat-form-field appearance="outline">
+                                                    <mat-label>Outline form field</mat-label>
+                                                    <input matInput placeholder="Placeholder">
+                                                    <mat-hint>Hint</mat-hint>
+                                                </mat-form-field>
+                                            </div>
                                         </tr>
                                     </tbody>
                                 </table>
