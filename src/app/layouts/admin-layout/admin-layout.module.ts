@@ -1,3 +1,6 @@
+import { ProductsComponent } from './../../views/products/products.component';
+import { EditProductComponent } from './../../views/products/edit-product/edit-product.component';
+import { AddProductComponent } from './../../views/products/add-product/add-product.component';
 //Modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -8,7 +11,6 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 //Components
 import { HomeComponent } from '../../views/home/home.component';
-import { ProductsComponent } from '../../views/products/products.component';
 import { SalesComponent } from '../../views/sales/sales.component';
 import { CategoriesComponent } from './../../views/categories/categories.component';
 
@@ -21,6 +23,7 @@ import { IconsComponent } from '../../views/icons/icons.component';
 import { MapsComponent } from '../../views/maps/maps.component';
 import { NotificationsComponent } from '../../views/notifications/notifications.component';
 import { UpgradeComponent } from '../../views/upgrade/upgrade.component';
+import { DetailProductComponent } from '../../views/products/detail-product/detail-product.component';
 
 //Routes
 import { AdminLayoutRoutes } from './admin-layout.routing';
@@ -40,13 +43,16 @@ import {
     MatRippleModule,
     MatInputModule,
     MatTooltipModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
 
   ],
   declarations: [
     HomeComponent,
+    AddProductComponent,
+    DetailProductComponent,
     SalesComponent,
     ProductsComponent,
+    EditProductComponent,
     CategoriesComponent,
     DashboardComponent,
     UserProfileComponent,

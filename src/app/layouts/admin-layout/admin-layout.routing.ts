@@ -1,5 +1,6 @@
+import { DetailProductComponent } from './../../views/products/detail-product/detail-product.component';
+import { EditProductComponent } from './../../views/products/edit-product/edit-product.component';
 import { CategoriesComponent } from './../../views/categories/categories.component';
-import { ProductsComponent } from '../../views/products/products.component';
 import { Routes } from '@angular/router';
 
 import { DashboardComponent } from '../../views/dashboard/dashboard.component';
@@ -12,6 +13,9 @@ import { NotificationsComponent } from '../../views/notifications/notifications.
 import { UpgradeComponent } from '../../views/upgrade/upgrade.component';
 import { HomeComponent } from '../../views/home/home.component';
 import { SalesComponent } from '../../views/sales/sales.component';
+import { AddProductComponent } from '../../views/products/add-product/add-product.component';
+import { ProductsComponent } from '../../views/products/products.component';
+
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -59,7 +63,15 @@ export const AdminLayoutRoutes: Routes = [
     // }
     { path: 'home',           component: HomeComponent },
     { path: 'sales',          component: SalesComponent },
-    { path: 'products',       component: ProductsComponent },
+    { 
+        path: 'products',
+        component: ProductsComponent,
+        children: [
+            { path: 'add', component: AddProductComponent },
+            { path: 'edit', component: EditProductComponent },
+            { path: 'detail', component: DetailProductComponent }
+        ] 
+    },
     { path: 'categories',     component: CategoriesComponent },
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },

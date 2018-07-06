@@ -1,3 +1,5 @@
+<router-outlet></router-outlet>
+
 <div class="main-content">
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -5,60 +7,44 @@
                 <div class="card">
                     <div class="card-header card-header-tabs card-header-primary">
                         <h2 class="text-center"><strong>Productos registrados</strong></h2>
-                        
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="container">
+                            <div class="card-body">
+                                <div class="col-md-8">
+                                    <!-- Section for search products -->
+                                        <mat-form-field>
+                                            <input matInput placeholder="Buscar producto">
+                                        </mat-form-field>
+                                    <!-- End section for search products -->
+                                </div>
+                                <div class="col-md-2">
+                                    <!-- Button add section -->
+                                        <button [routerLink]="['add']" class="add-button color-font" mat-raised-button><strong>Agregar</strong> <a class="material-icons">add</a> </button>
+                                    <!-- End button add section -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <thead class="">
-                                    <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Categoria</th>
-                                    <th>City</th>
-                                    <th>Salary</th>
+                                    <th><strong>ID</strong></th>
+                                    <th><strong>Nombre</strong></th>
+                                    <th><strong>Categoria</strong></th>
+                                    <th><strong>Acciones</strong></th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Dakota Rice</td>
-                                        <td>Niger</td>
-                                        <td>Oud-Turnhout</td>
-                                        <td>$36,738</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Minerva Hooper</td>
-                                        <td>Curaçao</td>
-                                        <td>Sinaai-Waas</td>
-                                        <td>$23,789</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Sage Rodriguez</td>
-                                        <td>Netherlands</td>
-                                        <td>Baileux</td>
-                                        <td>$56,142</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Philip Chaney</td>
-                                        <td>Korea, South</td>
-                                        <td>Overland Park</td>
-                                        <td>$38,735</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Doris Greene</td>
-                                        <td>Malawi</td>
-                                        <td>Feldkirchen in Kärnten</td>
-                                        <td>$63,542</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Mason Porter</td>
-                                        <td>Chile</td>
-                                        <td>Gloucester</td>
-                                        <td>$78,615</td>
+                                        <td><a [routerLink]="['detail']">Dakota Rice</a></td>
+                                        <td><a [routerLink]="['detail']">Niger</a></td>
+                                        <td>
+                                            <a [routerLink]="['edit']" class="material-icons">create</a>
+                                            <a [routerLink]="['detail']" class="material-icons">clear</a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
