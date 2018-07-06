@@ -6,8 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSelectModule } from '@angular/material/select';
 
 //Components
 import { HomeComponent } from '../../views/home/home.component';
@@ -33,6 +33,7 @@ import {
   MatInputModule,
   MatRippleModule,
   MatTooltipModule,
+  
 } from '@angular/material';
 @NgModule({
   imports: [
@@ -44,6 +45,7 @@ import {
     MatInputModule,
     MatTooltipModule,
     MatButtonToggleModule,
+    MatSelectModule
 
   ],
   declarations: [

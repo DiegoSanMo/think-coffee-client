@@ -1,5 +1,5 @@
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>
 <div class="main-content">
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -9,45 +9,39 @@
                         <h2 class="text-center"><strong>Productos registrados</strong></h2>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="container">
-                            <div class="card-body">
-                                <div class="col-md-8">
-                                    <!-- Section for search products -->
-                                        <mat-form-field>
-                                            <input matInput placeholder="Buscar producto">
-                                        </mat-form-field>
-                                    <!-- End section for search products -->
+                    <div class="container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <mat-form-field>
+                                        <input matInput placeholder="Buscar producto">
+                                    </mat-form-field>
                                 </div>
-                                <div class="col-md-2">
-                                    <!-- Button add section -->
-                                        <button [routerLink]="['add']" class="add-button color-font" mat-raised-button><strong>Agregar</strong> <a class="material-icons">add</a> </button>
-                                    <!-- End button add section -->
+                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                    <button [routerLink]="['add']" class="btn btn-primary btn-block" mat-raised-button><strong>Agregar</strong> <a class="material-icons">add</a> </button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead class="">
-                                    <th><strong>ID</strong></th>
-                                    <th><strong>Nombre</strong></th>
-                                    <th><strong>Categoria</strong></th>
-                                    <th><strong>Acciones</strong></th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td><a [routerLink]="['detail']">Dakota Rice</a></td>
-                                        <td><a [routerLink]="['detail']">Niger</a></td>
-                                        <td>
-                                            <a [routerLink]="['edit']" class="material-icons">create</a>
-                                            <a [routerLink]="['detail']" class="material-icons">clear</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="">
+                                        <th><strong>ID</strong></th>
+                                        <th><strong>Nombre</strong></th>
+                                        <th><strong>Categoria</strong></th>
+                                        <th><strong>Acciones</strong></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><a [routerLink]="['detail']">Dakota Rice</a></td>
+                                            <td><a [routerLink]="['detail']">Niger</a></td>
+                                            <td>
+                                                <a [routerLink]="['edit']" class="material-icons">create</a>
+                                                <a [routerLink]="['detail']" class="material-icons">clear</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
